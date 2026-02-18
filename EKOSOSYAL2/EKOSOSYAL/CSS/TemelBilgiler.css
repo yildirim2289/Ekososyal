@@ -1,0 +1,163 @@
+
+/* Bu stil, üst menü ile sayfa başlığı arasındaki boşluğu düzenler */
+.page-title-header {
+    text-align: center;
+    padding: 20px 0 40px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    margin-top: 120px; /* Sabit menüden dolayı yukarıdan boşluk bırakır */
+}
+
+/* Genel Ayarlar ve Font */
+:root {
+    --primary-color: #007bff; /* Mavi - Temel renk */
+    --secondary-color: #28a745; /* Yeşil - Çevre/Başarı rengi */
+    --text-color: #333;
+    --background-color: #f4f7f6; /* Açık arka plan */
+    --card-bg: #ffffff;
+    --dark-shadow: #87898c;
+    --border-radius: 8px;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.container {
+
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Header Stilizasyonu */
+.header {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Konu Kartı Stil Kılavuzu */
+.topic-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+    overflow: hidden; 
+    transition: box-shadow 0.3s ease;
+}
+
+.topic-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--card-bg);
+    border-bottom: 1px solid #eee;
+}
+
+.topic-header h2 {
+    flex-grow: 1;
+    font-size: 1.4em;
+    margin: 0 15px;
+    color: var(--text-color);
+}
+
+/* Görsel Stili: Kare ve BÜYÜTÜLMÜŞ */
+.topic-visual {
+    width: 120px; 
+    height: 120px; 
+    min-width: 120px; 
+    object-fit: cover; 
+    border-radius: var(--border-radius);
+    border: 3px solid var(--dark-shadow);
+    margin-right: 15px; 
+}
+
+/* Buton Stili */
+.toggle-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #0056b3;
+}
+.toggle-btn:active {
+    transform: scale(0.98);
+}
+
+
+/* İçerik Alanı (Başlangıç Durumu) */
+.topic-content {
+    /* Varsayılan görünür yükseklik */
+    max-height: 150px; 
+    overflow: hidden;
+    padding: 20px; 
+    opacity: 1; 
+    position: relative;
+    
+    /* Yumuşak geçişler */
+    transition: max-height 0.5s ease-in-out; 
+}
+
+.topic-content p {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    font-size: 1em;
+    color: #555;
+    text-align: justify;
+}
+
+/* Kapalıyken (aria-expanded="false" iken) soluklaşma maskesi */
+.topic-content[aria-expanded="false"]::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Soluklaşma yüksekliği */
+    pointer-events: none;
+    
+    /* Maske (Alt kısmı karartarak okumayı keser) */
+    background: linear-gradient(to bottom, transparent, var(--card-bg));
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 100%);
+}
+
+
+/* Açık Durum (JS tarafından max-height ayarlanır) */
+/* Açıkken maskeyi kaldır */
+.topic-content[aria-expanded="true"]::after {
+    display: none;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    .topic-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .topic-header h2 {
+        margin: 15px 0 10px 0;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çevreci Etkinlikler</title>
+    <link rel="stylesheet" href="CSS/Etkinlikler.css"> 
+    <link rel="stylesheet" href="CSS/Anasayfa.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/Logo.jpg">
+</head>
+<body>
+
+     <header class="main-header">
+        <a href="Anasayfa.html" class="logo">🌿 EKOSOSYAL</a>
+        
+        <nav class="desktop-nav">
+            <ul class="nav-links">
+                <li><a href="Anasayfa.html">Anasayfa</a></li>
+                <li><a href="TemelBilgiler.html">Temel Bilgiler</a></li>
+                <li><a href="Etkinlikler.html">Etkinlikler</a></li>
+                <li><a href="Anketler.html">Anketler</a></li>
+                <li><a href="CevreSorunuBildir.html" class="highlight-link">Sorun Bildir</a></li>
+                <li><a href="Profil.html"><i class="fas fa-user"></i> Profil</a></li>
+                <li><a href="Giriş-Kayıt.html" id="auth-link" class="cta-button">Giriş/Kayıt</a></li>
+            </ul>
+        </nav>
+
+        <button class="menu-toggle" aria-label="Menü Aç">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <header class="page-title-header">
+        <h1>🌱 Çevreci Etkinlikler Sayfası</h1>
+        <p>Gezegenimiz için bir araya geliyoruz.</p>
+    </header>
+
+    <div class="top-controls">
+        <button id="add-event-btn" class="action-btn" style="display: none;">🔔 Duyuru Yap</button>
+    </div>
+
+    <main>
+        <section id="event-list-section">
+            <h2>Aktif Etkinlikler</h2>
+            <div id="event-list" class="list-container">
+                </div>
+        </section>
+
+        <div id="event-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Yeni Etkinlik Duyurusu</h2>
+                <form id="new-event-form">
+                    <label for="event-title">Etkinlik Adı:</label>
+                    <input type="text" id="event-title" required>
+
+                    <label for="event-description">Açıklama:</label>
+                    <textarea id="event-description" required></textarea>
+
+                    <label for="event-date">Tarih:</label>
+                    <input type="date" id="event-date" required>
+                    
+                    <label for="event-image-url">Resim Adresi (URL):</label>
+                    <input type="text" id="event-image-url" value="https://via.placeholder.com/60" required>
+                    
+                    <label for="event-page-url">Bağlantı Adresi (URL):</label>
+                    <input type="text" id="event-page-url" value="event-new.html" required>
+                    <p style="font-size: 0.85em; color: #555; margin-top: -10px; margin-bottom: 15px;">
+                        Kullanıcının detayları görmek için yönlendirileceği sayfanın adresidir.
+                    </p>
+
+                    <button type="submit" class="action-btn">Duyuruyu Yayınla</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="JavaScript/Etkinlikler.js"></script>
+    <script src="JavaScript/Anasayfa.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+/* Bu stil, üst menü ile sayfa başlığı arasındaki boşluğu düzenler */
+.page-title-header {
+    text-align: center;
+    padding: 20px 0 40px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    margin-top: 120px; /* Sabit menüden dolayı yukarıdan boşluk bırakır */
+}
+
+/* Genel Stil ve Yeşil Tema */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f8e9; /* Açık Yeşil Zemin */
+    color: #388e3c; /* Koyu Yeşil Metin */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50; /* Ana Yeşil Renk */
+    color: #4CAF50;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #1b5e20; /* Çok Koyu Yeşil Başlık */
+}
+
+/* Buton Stilleri */
+.action-btn {
+    background-color: #2db534; /* Daha Canlı Yeşil Buton */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #2db534;
+}
+
+/* Ana İçerik ve Konteynerler */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.top-controls {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+/* Etkinlik Listesi Stili */
+.list-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #c8e6c9; /* Açık Yeşil Çerçeve */
+    border-radius: 6px;
+    background-color: #f9fff6; /* Çok Açık Yeşil Arka Plan */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+    /* YENİ GENİŞLİK */
+    width: 90%; 
+
+    /* KARTI ORTALAMA */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 4px;
+    border: 1px solid #a5d6a7;
+    flex-shrink: 0; /* Küçülmesini engeller */
+}
+
+.list-item-content {
+    flex-grow: 1;
+}
+
+.list-item h3 {
+    margin-top: 0;
+    color: #388e3c;
+    font-size: 1.2em;
+}
+
+.list-item-actions {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed #e0e0e0;
+}
+
+/* Yorum Alanı (Liste içi) */
+.list-item-comment-area {
+    margin-top: 10px;
+    /* DİKEY HİZALAMA İÇİN GÜNCELLEME */
+    display: flex; 
+    flex-direction: column; /* Öğeleri alt alta dizer (textarea üstte, buton altta) */
+    gap: 8px; /* Öğeler arasındaki boşluğu artırır */
+    align-items: flex-start; /* Tüm öğeleri sola (başlangıç noktasına) hizalar */
+}
+
+.list-item-comment-area textarea {
+    /* EN VE YÜKSEKLİK İÇİN GÜNCELLEME */
+    width: 70%; /* Yorum çubuğunun enini %70'e düşürdüm */
+    min-height: 20px; /* Yorum çubuğunun minimum yüksekliğini artırdım */
+    resize: vertical; /* Sadece dikey yeniden boyutlandırmaya izin verir */
+    padding: 8px;
+    border: 1px solid #a5d6a7;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+/* Yorum Yap butonu için düzenleme (margin: 5px; genel action-btn stilinden geliyor) */
+.comment-btn-inline {
+    margin-left: 0; /* Eğer gereksiz bir sol boşluk varsa sıfırlar */
+}
+
+
+/* ** MİSAFİR KULLANICI YORUM BUTONU STİLİ ** */
+.guest-comment-btn {
+    background-color: #f44336 !important; /* Kırmızı (Uyarı) */
+    box-shadow: 0 4px 6px rgba(244, 67, 54, 0.4);
+    font-size: 0.9em;
+    padding: 8px 15px;
+    white-space: nowrap; /* Metnin tek satırda kalmasını sağlar */
+}
+
+.guest-comment-btn:hover {
+    background-color: #d32f2f !important; /* Daha Koyu Kırmızı */
+    transform: translateY(-1px);
+}
+
+#event-detail-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* Modal Stilleri (Duyuru Yap) */
+.modal {
+    display: none; /* Varsayılan olarak gizli */
+    position: fixed;
+    z-index: 1001; /* Bildirimlerden üstte olsun */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Ortalamak için */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #4CAF50;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#new-event-form input[type="text"], 
+#new-event-form textarea, 
+#new-event-form input[type="date"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* DUYURU YAP BUTONU İÇİN ÖZEL STİLLER */
+#add-event-btn {
+    font-size: 1.1em;
+    padding: 12px 25px;
+    background-color: #FF5722; /* Canlı Turuncu/Kırmızı */
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255, 87, 34, 0.4);
+    transition: all 0.2s ease-in-out;
+}
+
+#add-event-btn:hover {
+    background-color: #E64A19; 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 8px rgba(255, 87, 34, 0.6);
+}
+
+/* Modal içindeki açıklama metni stili */
+.modal-content p {
+    color: #388e3c !important; 
+    font-style: italic;
+    padding-left: 5px;
+}
+
+/* ** ÖZEL TOAST BİLDİRİM STİLİ (Ekososyal Mesajı) ** */
+.custom-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; 
+    background-color: #f9fff6; 
+    border: 2px solid #388e3c; 
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 300px; 
+    font-size: 1em;
+    color: #1b5e20;
+    
+    opacity: 0;
+    transform: translateX(100%); 
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+/* Bildirimin görünür olduğu durum */
+.custom-notification.show {
+    opacity: 1;
+    transform: translateX(0); 
+}
+
+/* Hata Mesajı İçin Özel Stil */
+.custom-notification.error .notification-header {
+    background-color: #d32f2f; /* Hata için Kırmızı */
+}
+
+/* Bildirim Başlığı (Ekososyal) */
+.notification-header {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid #388e3c;
+    display: flex;
+    align-items: center;
+}
+
+/* Bildirim İçeriği (Mesaj) */
+.notification-body {
+    padding: 15px;
+    line-height: 1.4;
+}
