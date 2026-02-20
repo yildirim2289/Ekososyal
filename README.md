@@ -20,3 +20,10 @@ Etkinlikler sayfasında giriş yapan kullanıcılar: “Duyuru Yap” butonu ile
 
 ## Anketler
 Anketler sayfasında kullanıcıların çevre dostu olup olmadıklarını ve çevresel konulara ne kadar duyarlı olduklarını ölçen sorular yer almaktadır. Bu bölüm, kullanıcıların kendi farkındalık seviyelerini analiz etmelerine olanak tanır.
+
+<img width="1876" height="868" alt="Image" src="https://github.com/user-attachments/assets/b267cd04-65a5-4e11-b398-fbef0d22de54" />
+
+## Sorun Bildir
+Bu sayfada giriş yapan kullanıcılar: Çevrelerinde gördükleri çevresel sorunları bildirebilir, Sosyal içerik paylaşabilir,
+Paylaşılan içeriklere beğeni ve yorum yapabilir. Bu yapı, kullanıcıların aktif katılım sağlayabildiği bir çevresel sosyal paylaşım alanı oluşturur.
+
