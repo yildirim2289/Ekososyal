@@ -34,4 +34,9 @@ Profil sayfası yalnızca giriş yapan kullanıcılar tarafından görüntülene
 Kullanıcılar “Görev Yap” butonu ile görevi tamamladıklarını kanıtlayan fotoğraf yükleyebilir. Görev tamamlandığında puan kazanılır.
 Puan arttıkça kullanıcı profilinde bulunan rozetler kazanılmaya başlanır. Bu sistem, kullanıcı motivasyonunu artırmayı amaçlayan bir puan ve rozet mekanizması içermektedir.
 
+<img width="1854" height="898" alt="Image" src="https://github.com/user-attachments/assets/22833f81-e84f-4bac-b4ad-e6ba8b967fb1" />
+
+## Giriş/Kayıt
+Bu sayfada: Yeni kullanıcılar kayıt olabilir, Mevcut kullanıcılar giriş yapabilir, Misafir kullanıcı seçeneği ile uygulama sınırlı şekilde deneyimlenebilir. Kullanıcı oturum işlemleri frontend tarafında yönetilmektedir.
+
 
