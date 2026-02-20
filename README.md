@@ -16,3 +16,7 @@ Amaç, kullanıcıların çevresel sorunlar hakkında bilinçlenmesini sağlamak
 ## Etkinlikler
 Etkinlikler sayfasında giriş yapan kullanıcılar: “Duyuru Yap” butonu ile kendi çevre etkinliklerini paylaşabilir, Var olan etkinliklere yorum yapabilir, Topluluk etkileşimine katkıda bulunabilir. Bu sayfa dinamik kullanıcı etkileşimini destekleyen bir sosyal paylaşım alanı olarak tasarlanmıştır.
 
+<img width="1869" height="859" alt="Image" src="https://github.com/user-attachments/assets/141ae8ce-161e-44b0-8586-7924d26c8d19" />
+
+## Anketler
+Anketler sayfasında kullanıcıların çevre dostu olup olmadıklarını ve çevresel konulara ne kadar duyarlı olduklarını ölçen sorular yer almaktadır. Bu bölüm, kullanıcıların kendi farkındalık seviyelerini analiz etmelerine olanak tanır.
