@@ -39,4 +39,4 @@ Puan arttıkça kullanıcı profilinde bulunan rozetler kazanılmaya başlanır.
 ## Giriş/Kayıt
 Bu sayfada: Yeni kullanıcılar kayıt olabilir, Mevcut kullanıcılar giriş yapabilir, Misafir kullanıcı seçeneği ile uygulama sınırlı şekilde deneyimlenebilir. Kullanıcı oturum işlemleri frontend tarafında yönetilmektedir.
 
-
+<img width="1872" height="806" alt="Image" src="https://github.com/user-attachments/assets/34e24259-5e93-4417-bd46-5004b6005c1e" />
