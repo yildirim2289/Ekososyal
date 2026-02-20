@@ -27,3 +27,11 @@ Anketler sayfasında kullanıcıların çevre dostu olup olmadıklarını ve çe
 Bu sayfada giriş yapan kullanıcılar: Çevrelerinde gördükleri çevresel sorunları bildirebilir, Sosyal içerik paylaşabilir,
 Paylaşılan içeriklere beğeni ve yorum yapabilir. Bu yapı, kullanıcıların aktif katılım sağlayabildiği bir çevresel sosyal paylaşım alanı oluşturur.
 
+<img width="1867" height="904" alt="Image" src="https://github.com/user-attachments/assets/1710f9ff-05af-4812-934a-fb8d437dc470" />
+
+## Profil
+Profil sayfası yalnızca giriş yapan kullanıcılar tarafından görüntülenebilir. Bu sayfada: Haftalık çevrecilik görevleri yer alır.
+Kullanıcılar “Görev Yap” butonu ile görevi tamamladıklarını kanıtlayan fotoğraf yükleyebilir. Görev tamamlandığında puan kazanılır.
+Puan arttıkça kullanıcı profilinde bulunan rozetler kazanılmaya başlanır. Bu sistem, kullanıcı motivasyonunu artırmayı amaçlayan bir puan ve rozet mekanizması içermektedir.
+
+
