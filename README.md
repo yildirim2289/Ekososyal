@@ -11,5 +11,8 @@ Navigasyon sistemi sayesinde diğer sayfalara erişim sağlanır ve kullanıcı 
 Bu sayfada orman yangınları, küresel ısınma ve çeşitli çevresel olaylar hakkında bilgilendirici içerikler sunulmaktadır.
 Amaç, kullanıcıların çevresel sorunlar hakkında bilinçlenmesini sağlamak ve farkındalık oluşturmaktır.
 
+<img width="1873" height="769" alt="Image" src="https://github.com/user-attachments/assets/3c56d528-08ab-4d8c-9329-af345ccb2190" />
 
+## Etkinlikler
+Etkinlikler sayfasında giriş yapan kullanıcılar: “Duyuru Yap” butonu ile kendi çevre etkinliklerini paylaşabilir, Var olan etkinliklere yorum yapabilir, Topluluk etkileşimine katkıda bulunabilir. Bu sayfa dinamik kullanıcı etkileşimini destekleyen bir sosyal paylaşım alanı olarak tasarlanmıştır.
 
